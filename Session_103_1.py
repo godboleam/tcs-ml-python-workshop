@@ -4,39 +4,7 @@
 """
 @author: Godbole
 
-Reference: "An Introduction to Information Retreival" (Draft of April 1, 2009) by Manning, Raghavan and Schutze
-https://nlp.stanford.edu/IR-book/  Chapter#13 Text Classification and Naive Bayes
-
-DESIGN:
-
-P(citym)= number of training tweets from citym / total number of training tweets
-
-P(wordj|cityk)= (frequency of wordj in training tweets from cityj +1)/(total number of words in training tweets from cityj + number of distinct words in the entire training set)
-where wordj is a word in the test tweet being evaluated (irrespective  of whether it's in the training set or otherwise). 
-
-A. In the numerator: we need the '1' in the numerator to address the case of sparse data i.e. not to consider a probability of zero if a word is absent from the list of words from a city.
-B. In the denominator: we need to have the number of words in training tweets from cityk as otherwise the other term in the denominator (i.e. number of distinct words in the entire training set won't be a like-for-like comparison as the numerator is not about distinct words but the frequency).
-C. In the denominator: we need to have the number of distinct words so that in the case where a word in a test tweet is absent in the training set we consider this word as an additional word with approximately a probability of 1/(number of distinct words in the training set i.e. vocabulary size)
-adjusted for the number of wordings in the training tweets of that city so that an absent word never gets a higher conditional probability.
-
-All words in the training set are converted into lower case for finding the frequency distributions.
-For other pre-processing related points please the Experimentation section below.
-The words in the test tweet are put through the same pre-processing as the training set.
-
-EXPERIMENTATION:
-1. An initial implementation of a Naive Bayes classifier gave an accuracy of around 10%. Hence, multinomial
-Naive Bayes was attempted. 
-2. Have not found a difference in near-final version if multiplication of probabilities is done instead of 
-using logarithms and then addition...However, I have retained the use of logarithms considering the case
-where there a more words and some even smaller probabilities.
-3. It was found that for certain punctuation marks it was better to replace them with a ' ' while for others
-it was better to replace with a ''.
-4. In the case of the training set only: the name of the class i.e. Chicago,_IL has been considered as part
-of the training set. Only the tweet from the test set is considered for making predictions.
-                                                                                                                                                                                                                                  
-
-Accuracy=64%
-Running time: 3 minutes on an i5 4GB RAM machine                                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                 
 
 """
 #import sys
