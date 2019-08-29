@@ -3,7 +3,7 @@
 ## Session           Dataset
 102                 Pima Indian Diabetes dataset (https://archive.ics.uci.edu/ml/datasets.php ).  Currently not available at url. Available here: https://www.kaggle.com/uciml/pima-indians-diabetes-database
 
-103                 <TBD>
+103                 <Not public dataset>
   
 104                 Movielens dataset (http://files.grouplens.org/datasets/movielens/ml-100k.zip ). 
 
