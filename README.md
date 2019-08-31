@@ -8,3 +8,8 @@
 202                 Kaggle AirBnB Dataset (https://www.kaggle.com/c/airbnb-recruiting-new-user-bookings/data ). 
 
 202                 Kaggle Credit Card Fraud Detection Dataset (https://www.kaggle.com/mlg-ulb/creditcardfraud#creditcard.csv ).
+
+Recordlinkage:
+                    download restaurants dataset from below
+                    http://www.cs.utexas.edu/users/ml/riddle/data.html
+                    Import linkage python library
