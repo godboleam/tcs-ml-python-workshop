@@ -12,6 +12,6 @@
 Recordlinkage:
                     download restaurants dataset from below                    
                     http://www.cs.utexas.edu/users/ml/riddle/data.html                    
-                    Import linkage python library, aim of the exercise is to be able to identifies entries from both the data sets "fodors" and "zagat" which are refereeing to the same real entity. You would need to bring the files into shape first by segregating the name, address, phone, city, type of restaurant.
+                    Import recordlinkage python library, aim of the exercise is to be able to identifies entries from both the data sets "fodors" and "zagat" which are refereeing to the same real entity. You would need to bring the files into shape first by segregating the name, address, phone, city, type of restaurant.
 
 
